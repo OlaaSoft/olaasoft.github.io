@@ -1,0 +1,67 @@
+TERMS OF USE
+
+App Name: Patches
+Developer / Company: OlaaSoft
+Effective Date: March 29, 2026
+
+By downloading and using Patches, you agree to the following terms and conditions:
+
+1. Use of the App
+
+Patches is a puzzle game where you solve pattern-matching challenges, earn coins, and progress through increasingly difficult levels. You may use the App for personal entertainment purposes.
+
+2. Virtual Currency
+
+- Patches uses an in-game virtual currency called "coins".
+- Coins can be earned by completing puzzles, watching rewarded ads, and claiming daily streak rewards.
+- Coins can be spent on in-game actions such as hints, undo, extra time, and skipping puzzles.
+- Coins can also be purchased through in-app purchases.
+- Coins have no real-world monetary value and cannot be exchanged, transferred, or refunded outside of the App.
+
+3. In-App Purchases
+
+- Patches offers optional consumable in-app purchases (coin packs) that provide additional in-game coins.
+- Payment: Payment is charged to your Apple ID account at the time of purchase.
+- Consumable: Purchased coins are added to your balance immediately and are consumed as you use them in the game.
+- No Subscriptions: Patches does not offer subscription-based purchases.
+- Refunds: All refund requests are handled by Apple. Please refer to Apple Support for details.
+
+4. Advertising
+
+- Patches displays rewarded video ads that you can choose to watch in exchange for in-game coins or benefits.
+- Patches may also display interstitial ads between gameplay sessions.
+- A banner ad may be shown on certain screens.
+- Watching rewarded ads is always optional and never required to play the game.
+
+5. User Content
+
+- All game progress and data remain stored locally on your device.
+- OlaaSoft does not store your game data on its servers.
+- Uninstalling the App may result in loss of all game progress and purchased coins.
+
+6. Intellectual Property
+
+All app content, design, branding, puzzle designs, and code belong to OlaaSoft. You may not copy, distribute, or modify any part of the app without prior permission.
+
+7. Disclaimer
+
+The App is provided "as is". We strive to provide the best experience, but we do not guarantee:
+
+- The App will always function uninterrupted or bug-free.
+- Game progress will be preserved in all circumstances (e.g., device failure, app deletion).
+
+8. Limitation of Liability
+
+- OlaaSoft is not responsible for any data loss on your device. You are responsible for managing your local data.
+- We are not liable for any loss of in-game currency or progress due to device issues or app removal.
+
+9. Changes to Terms
+
+We reserve the right to modify these Terms at any time. Continued use of the App after changes means you accept the updated terms.
+
+10. Contact
+
+For support or questions regarding these Terms, please contact us at:
+choicy.appstore@gmail.com
+
+(c) 2026 OlaaSoft. All rights reserved.

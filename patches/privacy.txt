@@ -1,0 +1,55 @@
+PRIVACY POLICY
+
+App Name: Patches
+Developer / Company: OlaaSoft
+Effective Date: March 29, 2026
+
+This Privacy Policy explains how OlaaSoft handles your information when you use the mobile application Patches. By using the App, you agree to this Privacy Policy.
+
+1. Data Collection and Storage
+
+We do not collect, store, or process any personal data on our servers. All game progress, coin balances, and settings are stored locally on your device only.
+
+- Puzzle progress and completion history
+- Coin balance and transaction history
+- Game settings and preferences
+- Daily streak and achievement data
+
+We do not store or process any of this data on our servers. All game logic and data management is handled locally on your device.
+
+2. In-App Purchases
+
+Patches offers optional in-app purchases (coin packs). All transactions are processed by Apple through the App Store. We do not collect or store any payment information. Purchase history is managed by Apple and linked to your Apple ID.
+
+3. Advertising
+
+Patches displays ads through Google AdMob. AdMob may collect device identifiers and usage data to serve relevant ads. You can opt out of personalized advertising through your device settings. For more information, refer to Google's Privacy Policy: https://policies.google.com/privacy
+
+4. Third-Party Services
+
+We use the following third-party services:
+
+- Firebase Analytics & Crashlytics (Google LLC): Used to understand usage patterns and improve app performance. No personal data (such as names, emails, or user-generated content) is transmitted.
+- Google AdMob (Google LLC): Used to display advertisements. May collect device identifiers for ad personalization.
+- Mixpanel: Used for anonymized product analytics to improve the app experience.
+- Adapty: Used for in-app purchase management only.
+- Sentry: Used for error tracking and crash reporting.
+
+5. Offline Use
+
+All core gameplay features work without an internet connection. An internet connection is only required for watching ads, making in-app purchases, and syncing analytics data.
+
+6. Children's Privacy
+
+Our App is not directed at children under the age of 4. We do not knowingly collect any personal data from children.
+
+7. Changes to This Policy
+
+We may update this Privacy Policy from time to time. Any changes will be posted within the app and/or on this page with a new effective date.
+
+8. Contact
+
+For any questions about this Privacy Policy, please contact us at:
+choicy.appstore@gmail.com
+
+(c) 2026 OlaaSoft. All rights reserved.
