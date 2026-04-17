@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OlaaSoft Shorts — OAuth Callback</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #1a1a2e;
+      background: #fafafa;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      max-width: 640px;
+      width: 100%;
+      background: white;
+      border: 1px solid #e5e5e5;
+      border-radius: 16px;
+      padding: 32px;
+    }
+    h1 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+    .status { font-size: 14px; color: #666; margin-bottom: 24px; }
+    .code-block {
+      background: #f3f4f6;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      word-break: break-all;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .label { font-size: 12px; color: #666; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+    .copy-btn {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-right: 8px;
+    }
+    .copy-btn:hover { background: #1d4ed8; }
+    .copy-btn.copied { background: #16a34a; }
+    .hint { font-size: 13px; color: #666; margin-top: 16px; padding: 12px; background: #fffbeb; border-left: 3px solid #f59e0b; border-radius: 6px; }
+    .error { color: #dc2626; font-weight: 600; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0b0f1a; color: #e2e8f0; }
+      .container { background: #131827; border-color: #253049; }
+      h1 { color: #f1f5f9; }
+      .code-block { background: #0b0f1a; border-color: #253049; color: #e2e8f0; }
+      .label, .status { color: #94a3b8; }
+      .hint { background: #1a1610; color: #fbbf24; border-color: #92400e; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>OlaaSoft Shorts — OAuth Callback</h1>
+    <p class="status" id="status">Processing authorization…</p>
+
+    <div id="success" style="display:none">
+      <div class="label">Authorization Code</div>
+      <div class="code-block" id="code"></div>
+      <button class="copy-btn" id="copyCode">Copy code</button>
+
+      <div class="label" style="margin-top:24px">Full Redirect URL</div>
+      <div class="code-block" id="fullUrl"></div>
+      <button class="copy-btn" id="copyUrl">Copy full URL</button>
+
+      <div class="hint">
+        Paste this code (or the full URL) into the OlaaSoft Shorts OAuth script when prompted.
+        This code expires within a few minutes.
+      </div>
+    </div>
+
+    <div id="failure" style="display:none">
+      <p class="error" id="errorMsg"></p>
+      <div class="hint">Return to the OlaaSoft Shorts OAuth script and try again.</div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get('code');
+      const error = params.get('error') || params.get('error_description');
+      const status = document.getElementById('status');
+
+      if (code) {
+        document.getElementById('success').style.display = 'block';
+        document.getElementById('code').textContent = code;
+        document.getElementById('fullUrl').textContent = window.location.href;
+        status.textContent = 'Authorization successful. Copy the code below and return to the OAuth script.';
+
+        const copyText = (text, btn) => {
+          navigator.clipboard.writeText(text).then(() => {
+            const original = btn.textContent;
+            btn.textContent = 'Copied ✓';
+            btn.classList.add('copied');
+            setTimeout(() => { btn.textContent = original; btn.classList.remove('copied'); }, 1500);
+          });
+        };
+        document.getElementById('copyCode').addEventListener('click', (e) => copyText(code, e.target));
+        document.getElementById('copyUrl').addEventListener('click', (e) => copyText(window.location.href, e.target));
+      } else if (error) {
+        document.getElementById('failure').style.display = 'block';
+        document.getElementById('errorMsg').textContent = 'Authorization failed: ' + error;
+        status.textContent = 'Something went wrong.';
+      } else {
+        status.textContent = 'No authorization code found in the URL. Start the OAuth flow from the OlaaSoft Shorts script.';
+      }
+    })();
+  </script>
+</body>
+</html>
