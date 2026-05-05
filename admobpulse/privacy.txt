@@ -1,0 +1,85 @@
+PRIVACY POLICY
+
+App Name: AdMob Pulse
+Developer / Company: OlaaSoft
+Effective Date: May 5, 2026
+
+This Privacy Policy explains how OlaaSoft handles your information when you use
+the mobile application AdMob Pulse. By using the App, you agree to this Privacy
+Policy.
+
+1. DATA COLLECTION AND STORAGE
+We do not collect, store, or process any personal data on our servers. AdMob
+Pulse is a viewer for your own Google AdMob account — all earnings and
+statistics you see in the App are fetched directly from Google's AdMob API to
+your device.
+
+- App preferences (theme, currency, selected account) are stored locally on
+  your device only.
+- AdMob API responses (earnings, impressions, eCPM) are cached locally on your
+  device for offline reading and to reduce repeat API calls.
+- We do not store your AdMob data, earnings, or account information on our
+  servers.
+
+2. GOOGLE SIGN-IN AND ADMOB API ACCESS
+To show your AdMob earnings, AdMob Pulse uses Google Sign-In and requests
+read-only access to your AdMob account through the Google AdMob API:
+
+- Scope requested: https://www.googleapis.com/auth/admob.readonly — view AdMob
+  reports and configuration only. The App cannot create, modify, or delete
+  anything in your AdMob account.
+- Your Google account email is used only on your device to identify which
+  AdMob account you are viewing. It is never sent to our servers.
+- OAuth tokens are stored in the iOS Keychain / Android Keystore on your
+  device. You can revoke access at any time at
+  https://myaccount.google.com/permissions
+
+3. IN-APP PURCHASES AND SUBSCRIPTIONS
+AdMob Pulse offers optional auto-renewable subscriptions (weekly, yearly) and
+a one-time lifetime purchase. All transactions are processed by Apple (App
+Store) or Google (Play Store). We do not collect or store any payment
+information.
+
+4. THIRD-PARTY SERVICES
+- Google AdMob API (Google LLC): Used to fetch your AdMob earnings and
+  statistics on your behalf. Read-only access. Subject to Google's Privacy
+  Policy at https://policies.google.com/privacy
+- Firebase Crashlytics & Analytics (Google LLC): Used to track crashes and
+  aggregate, anonymous usage patterns. No personal data, AdMob data, or
+  account information is transmitted.
+- Firebase Cloud Messaging (Google LLC): Used to deliver optional daily
+  earnings summary push notifications.
+- Mixpanel: Used for anonymized product analytics to improve the app
+  experience. No AdMob data is sent.
+- Sentry: Used for error tracking and crash reporting.
+- Adapty: Used for in-app subscription management only.
+
+5. NOTIFICATIONS
+If you opt in, AdMob Pulse may send daily local notifications summarizing your
+latest earnings. Notifications are scheduled and rendered locally on your
+device — no notification content is sent through our servers.
+
+6. OFFLINE USE
+Cached earnings and statistics remain readable without an internet connection.
+An internet connection is required to refresh data from the AdMob API and to
+make in-app subscription purchases.
+
+7. CHILDREN'S PRIVACY
+AdMob Pulse is a developer tool intended for app publishers and is not
+directed at children under the age of 13. We do not knowingly collect any
+personal data from children.
+
+8. DATA DELETION
+Because we do not store your data on our servers, there is nothing to delete
+on our side. To remove all data on your device, simply uninstall the App. To
+revoke Google AdMob access, visit https://myaccount.google.com/permissions
+
+9. CHANGES TO THIS POLICY
+We may update this Privacy Policy from time to time. Any changes will be
+posted within the app and/or on this page with a new effective date.
+
+10. CONTACT
+For any questions about this Privacy Policy, please contact us at:
+choicy.appstore@gmail.com
+
+© 2026 OlaaSoft. All rights reserved.

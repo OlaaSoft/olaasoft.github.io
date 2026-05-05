@@ -1,0 +1,76 @@
+TERMS OF USE
+
+App Name: AdMob Pulse
+Developer / Company: OlaaSoft
+Effective Date: May 5, 2026
+
+By downloading and using AdMob Pulse, you agree to the following terms and
+conditions:
+
+1. USE OF THE APP
+AdMob Pulse is a read-only earnings and statistics dashboard for your own
+Google AdMob account. You may use the App for personal or business purposes
+to monitor your own AdMob revenue, impressions, eCPM, and ad performance.
+
+2. ACCOUNT REQUIREMENT
+To use the core features of AdMob Pulse you must sign in with a Google
+account that has access to a Google AdMob account. You are responsible for
+maintaining the confidentiality of your Google account credentials.
+
+3. FREE AND PREMIUM FEATURES
+- Free tier: View today's and yesterday's earnings, basic charts, single
+  account.
+- Premium tier (subscription or lifetime): Unlimited historical data,
+  multi-account support, per-app and per-ad-unit breakdowns, daily earnings
+  push notifications, ad-free experience.
+
+4. SUBSCRIPTIONS
+- AdMob Pulse offers optional auto-renewable subscriptions (weekly and
+  yearly) and a one-time lifetime purchase.
+- Payment is charged to your Apple ID or Google account at the time of
+  purchase.
+- Subscriptions automatically renew at the end of each billing period unless
+  canceled at least 24 hours before the next renewal.
+- You can cancel a subscription at any time from your device's account
+  settings (App Store or Play Store). The premium features remain active
+  until the end of the current paid period.
+- The lifetime tier is a one-time, non-consumable purchase that unlocks all
+  premium features for the lifetime of the App.
+- All refund requests are handled by Apple or Google. Please refer to their
+  support pages for details.
+
+5. DATA ACCURACY
+- All earnings and statistics displayed in AdMob Pulse are fetched directly
+  from Google's AdMob API.
+- OlaaSoft does not modify or alter any data; we display it as returned by
+  Google.
+- Data may be delayed by a few hours due to AdMob's reporting cadence.
+  AdMob Pulse is not responsible for the timeliness or accuracy of the
+  underlying AdMob data.
+
+6. USER CONDUCT
+- You agree to use AdMob Pulse only with AdMob accounts that you own or are
+  authorized to access.
+- You agree not to attempt to reverse engineer, decompile, or extract the
+  source code of the App.
+
+7. DISCLAIMER
+AdMob Pulse is an independent third-party application and is not affiliated
+with, endorsed, or sponsored by Google LLC. AdMob is a trademark of Google
+LLC and is used here solely to describe the data the App displays.
+
+8. LIMITATION OF LIABILITY
+The App is provided "as is" without warranties of any kind. OlaaSoft is not
+liable for any decisions, financial or otherwise, made based on data
+displayed in the App. You are solely responsible for verifying earnings
+figures with the official Google AdMob console.
+
+9. CHANGES TO THESE TERMS
+We may update these Terms from time to time. Any changes will be posted
+within the app and/or on this page with a new effective date.
+
+10. CONTACT
+For any questions about these Terms, please contact us at:
+choicy.appstore@gmail.com
+
+© 2026 OlaaSoft. All rights reserved.
