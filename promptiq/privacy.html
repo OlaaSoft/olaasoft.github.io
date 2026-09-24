@@ -36,66 +36,171 @@
 <body>
   <div class="container">
     <h1>PromptIQ — Privacy Policy</h1>
-    <div class="subtitle">Prompt engineering quizzes · Last updated 23 September 2026</div>
+    <div class="subtitle">Prompt engineering quizzes · Last updated 25 September 2026</div>
 
     <p>PromptIQ is a quiz app about writing prompts for AI language models,
-    published by OlaaSoft. This policy explains what the app stores and what
-    leaves your device. We do not ask for your name, email address or phone
-    number, and there is no account to create.</p>
+    published by OlaaSoft. This policy explains what information the app and
+    its service process, where it is stored, and the choices available to
+    you. Feature availability can vary by app version, platform and service
+    configuration.</p>
 
-    <h2>1. Data Stored on Your Device</h2>
-    <p>Your chosen language, sound and haptics preferences are saved locally
-    on your device. Quiz answers and scores are held only for the duration
-    of a quiz and are not written to storage or uploaded. Deleting the app
-    deletes everything it has stored.</p>
+    <h2>1. Accounts and Authentication</h2>
+    <p>PromptIQ uses Firebase Authentication. The app can create an anonymous
+    account when an account identifier is needed for quiz access and progress,
+    without asking you to register first. Email-and-password registration and
+    sign-in are also supported. Google and Apple sign-in may appear only in a
+    version where those providers have been configured and enabled.</p>
+    <p>Firebase processes the account identifier and credentials needed to
+    authenticate you. Depending on the sign-in method, this may include your
+    email address and display name. Passwords and third-party sign-in
+    credentials are handled by Firebase and the selected sign-in provider;
+    the PromptIQ quiz backend does not store your password. The backend
+    identifies requests using the random Firebase user ID and a verified ID
+    token. Linking an anonymous account retains that account's quiz history.</p>
 
-    <h2>2. Advertising</h2>
-    <p>PromptIQ is free and supported by ads served through Google AdMob,
-    which may use additional mediated ad sources such as Unity Ads and
-    Pangle. These providers may use your device's advertising identifier to
-    select which ads you see and to measure whether an ad led to an install.</p>
-    <p>Where the law requires it — in the EEA, the UK and Switzerland — a
-    consent form is shown before any ad loads, and the app requests no ads at
-    all if you decline. On iOS, Apple's own tracking permission prompt is
-    shown as part of the same sequence. You can reopen these choices at any
-    time from <strong>Settings → Ad privacy options</strong> in the app.</p>
+    <h2>2. Profile, Quiz and Progress Data</h2>
+    <p>PromptIQ's live API stores account-linked application data in a
+    PromptIQ-specific PostgreSQL database hosted on Railway. This can include:</p>
+    <ul>
+      <li>app language, selected AI tools, learning purposes and experience level;</li>
+      <li>quiz sessions, seen questions, selected answers and grading results;</li>
+      <li>generated articles and generation status when generation is available;</li>
+      <li>answered and correct totals, points, topic and difficulty results,
+      current and best streaks, completed sessions and read article identifiers;</li>
+      <li>anonymous and registered trial usage, request-deduplication records
+      and rate-limit counters.</li>
+    </ul>
+    <p>Profile choices weight selection among unseen questions in the requested
+    language and topic. A matching difficulty, AI-tool tag or purpose tag can
+    make a question more likely to be selected, but unmatched questions remain
+    eligible. Correct answers are returned only after an answer is submitted.
+    Follow-up article quizzes do not add ranking points. An unanswered session
+    stops accepting answers after 24 hours; that does not automatically delete
+    the session record.</p>
 
-    <h2>3. Crash Reporting and Analytics</h2>
-    <p>The app reports crashes and usage through Firebase Crashlytics,
-    Firebase Analytics, Sentry and Mixpanel. What these receive is a
-    device-level record — device model, operating system version, app
-    version, a crash stack trace where one occurred, and which screens were
-    opened. They do not receive your name, your email address, or the content
-    of anything you type.</p>
+    <h2>3. Information Stored on Your Device</h2>
+    <p>The app stores language, sound and haptics settings, the learning-reminder
+    choice, a local profile and progress cache, and subscription-entitlement
+    state used by the inactive subscription integration. Account-scoped profile
+    and progress caches use an account fingerprint rather than the raw account
+    identifier and are cleared on sign-out or account deletion. Uninstalling
+    removes local app data, but does not by itself delete data held by Firebase,
+    the PromptIQ backend, an app store or another service provider.</p>
 
-    <h2>4. Notifications and Remote Settings</h2>
-    <p>The app registers with Firebase Cloud Messaging so we can send
-    occasional notices, and reads Firebase Remote Config so we can tell you
-    when an update is required without shipping a new version. On both
-    platforms notifications are only delivered if you allow them when asked.</p>
+    <h2>4. AI-Generated Content</h2>
+    <p>The production AI generation worker is currently disabled while its
+    provider accounts are being configured. New AI-generated question banks
+    and articles are therefore unavailable in this configuration.</p>
+    <p>If generation is enabled in a later configuration, PromptIQ is designed
+    to use OpenAI, Anthropic Claude and Google Gemini to generate and
+    independently review questions and articles. Provider requests can include
+    the requested language and topic, editorial instructions, recent shared
+    question titles used to avoid repetition, generic AI-tool and purpose tags,
+    and the question being explained. Candidate content is sent to the three
+    providers for review.</p>
+    <p>PromptIQ does not add your email address, display name, Firebase user ID,
+    password, selected answer, score, ranking, saved tool preferences, learning
+    purposes or experience level to those requests. A selected question can
+    indirectly reflect an interest because its shared tags affected selection.
+    Each provider's own data practices apply when the integration is enabled;
+    this policy makes no promise about provider retention or training controls
+    that have not been verified for the deployed accounts.</p>
 
-    <h2>5. No Purchases</h2>
-    <p>This version of PromptIQ sells nothing. There are no in-app purchases
-    and no subscription, so no payment or purchase information is collected.
-    If that changes, this policy will be updated before the feature ships.</p>
+    <h2>5. Ranking Privacy</h2>
+    <p>When ranking is enabled, registered users who answer a ranked question
+    can appear in it. Ranking responses contain points, answer totals, rank and
+    a masked label derived only from the final three characters of the email
+    address in the verified Firebase token, such as <code>***com</code>. The
+    ranking does not expose another user's name, Firebase user ID or full email
+    address. Firebase Authentication separately retains the email used for the
+    account.</p>
 
-    <h2>6. Offline Use</h2>
-    <p>Quizzes work without a network connection. Without one you will see no
-    ads and no notices, and nothing is sent anywhere.</p>
+    <h2>6. Advertising and Consent</h2>
+    <p>Eligible users may see advertising served through Google AdMob and
+    configured mediation sources such as Unity Ads and Pangle. These providers
+    may process device and advertising identifiers, network-derived approximate
+    location, ad interactions and diagnostic information to select, deliver,
+    secure and measure ads, subject to applicable consent and their own
+    policies.</p>
+    <p>Where a consent form is required, the app uses Google's User Messaging
+    Platform before opening its ad-request gate. If consent is unavailable or
+    withheld, the gate remains closed for that session. On iOS, an applicable
+    tracking request is presented through the same consent sequence. Where
+    available, choices can be reopened from <strong>Settings → Ad privacy
+    options</strong>. A no-ads build configuration and any active premium
+    entitlement also suppress ads.</p>
 
-    <h2>7. Children's Privacy</h2>
+    <h2>7. Diagnostics, Analytics and App Integrity</h2>
+    <p>Depending on the build configuration, PromptIQ initializes Firebase
+    Crashlytics and Analytics, Sentry and Mixpanel for crash reporting,
+    diagnostics and product analytics. These services may process app version,
+    device and operating-system information, technical identifiers, app events,
+    screen use, network information and crash details such as stack traces. The
+    app does not explicitly attach your email address, profile selections, quiz
+    answers or article text to its analytics and crash-reporting calls.</p>
+    <p>Firebase Remote Config provides settings such as update notices. Firebase
+    Cloud Messaging can create a device token for remote messaging, but the app
+    does not request notification permission during cold start. Firebase App
+    Check code is included to provide app-attestation tokens when its native
+    configuration is completed and enabled.</p>
+
+    <h2>8. Optional Learning Reminder</h2>
+    <p>The learning reminder is optional. The app asks for notification
+    permission only when you enable it in Settings. Where the operating system
+    supports and permits it, the current implementation schedules one local
+    notification for 24 hours after activity. Later app activity replaces it
+    with a new one-time schedule. Disabling the setting, signing out or deleting
+    the account cancels the scheduled reminder. The preference, localized
+    notification text and activity time are stored locally.</p>
+
+    <h2>9. Purchases and Subscriptions</h2>
+    <p>Subscriptions are disabled in the current app configuration, so no
+    subscription is offered for purchase. The app includes an inactive Adapty
+    integration for possible store-managed subscriptions; its SDK may be
+    initialized for service readiness, but the disabled purchase path does not
+    identify a registered PromptIQ account to Adapty.</p>
+    <p>If subscriptions are offered in another version or configuration,
+    purchase and payment information is handled by Apple App Store or Google
+    Play, while Adapty is used to retrieve products and determine entitlement.
+    The app provides purchase recovery and opens the applicable store's
+    subscription-management page. Deleting a PromptIQ account or uninstalling
+    the app does not cancel a store subscription; cancellation must be completed
+    through the store account.</p>
+
+    <h2>10. Account Deletion and Retention</h2>
+    <p>Anonymous and registered users can choose <strong>Delete account</strong>
+    in a build where account features are enabled. Registered deletion requires
+    a recent sign-in. The app first asks the backend to delete account data,
+    clears account-scoped local data and reminders, and then deletes the
+    Firebase Authentication identity. Continued use can create a new,
+    unrelated anonymous identity.</p>
+    <p>Backend deletion removes the profile, preferences, sessions, seen
+    history, generated articles, private generation jobs, rate counters,
+    ranking entry and associated administrator audit records. A minimal
+    tombstone remains to prevent delayed requests or workers from recreating
+    the deleted account. It contains only <code>{deleted: true}</code> and is
+    addressed by a SHA-256 hash of the former random Firebase user ID; it does
+    not contain profile, quiz, email or article content.</p>
+    <p>The current backend does not define a general automatic deletion period
+    for profile, progress, session, article, ranking, job or tombstone records.
+    The 24-hour answer-expiry rule is an access limit, not a retention period.</p>
+
+    <h2>11. Service Providers</h2>
+    <p>Depending on enabled features, PromptIQ uses Firebase, Railway, Google
+    AdMob and mediation partners, Sentry, Mixpanel and Adapty. Google and Apple
+    sign-in, OpenAI, Anthropic, Google Gemini, Apple App Store and Google Play
+    apply only where the related feature has been configured and made
+    available. Their processing is also governed by their own policies.</p>
+
+    <h2>12. Children's Privacy</h2>
     <p>PromptIQ is intended for users aged 13 and over and is not directed at
     children. We do not knowingly collect information from children under 13.</p>
 
-    <h2>8. Deleting Your Data</h2>
-    <p>Uninstalling the app removes everything stored on your device. If you have a question about
-    anything described here, write to us at the address below.</p>
-
-    <h2>9. Changes to This Policy</h2>
+    <h2>13. Changes to This Policy</h2>
     <p>If this policy changes, the revised version is published on this page
     with a new "last updated" date.</p>
 
-    <h2>10. Contact</h2>
+    <h2>14. Contact</h2>
     <p>Questions about this policy:
     <a href="mailto:choicy.appstore@gmail.com">choicy.appstore@gmail.com</a></p>
 
