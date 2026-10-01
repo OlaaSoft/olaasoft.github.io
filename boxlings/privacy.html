@@ -35,37 +35,60 @@
 <body>
   <div class="container">
     <h1>Boxlings — Privacy Policy</h1>
-    <div class="subtitle">Blind Box ASMR · Last updated 19 September 2026</div>
+    <div class="subtitle">Blind Box ASMR · Last updated 1 October 2026</div>
 
     <p>Boxlings is a blind-box collecting game published by OlaaSoft. This
     policy explains what the app stores and what leaves your device.</p>
 
     <h2>1. Data Stored on Your Device</h2>
     <p>Your collection, shard balance, progress, streak, achievements and
-    settings are saved locally on your device. They are not uploaded
-    anywhere, and deleting the app deletes them.</p>
+    settings are saved locally on your device. Selected collection information
+    and scores are also shared through the online features described below.
+    Removing the app and its local data removes local progress, unless your
+    operating system restores it from a backup.</p>
+    <p>On the first launch of an ad-supported build, we ask your age before
+    configuring ads. The confirmed answer is stored only on your device and
+    cannot be edited in the app. We do not send your age or a birth date to
+    our servers, analytics services or ad partners. Ad partners receive the
+    resulting child-directed or non-child-directed treatment setting, not
+    your answer. Until an answer is confirmed, the child-directed default
+    applies. Builds without ads do not ask this question.</p>
 
-    <h2>2. Online Leaderboard (Optional)</h2>
-    <p>If you use the leaderboard, we store an anonymous player id, the
-    nickname and avatar you choose, the country you select, and your score.
-    Sign-in is anonymous — we never ask for your name, email or phone
-    number. Choosing a nickname is optional; you can play the whole game
-    without ever appearing on a board.</p>
+    <h2>2. Online Leaderboard and Public Collection</h2>
+    <p>After you open a box while online, the app automatically participates
+    in the leaderboard using a Firebase anonymous player account. You do not
+    need to create a username/password login or provide an email address to
+    play, but anonymous sign-in still creates a technical account identifier.</p>
+    <p>Your player nickname, emoji avatar, country label and score appear on
+    the leaderboard. Other players can tap your entry to see the list of toys
+    you have found. We store these profile and score records, found-toy IDs
+    and update timestamps using Firebase. They are not private local-only
+    data. Do not put your real name or contact information in your nickname.</p>
 
     <h2>3. Advertising</h2>
     <p>Boxlings is free and supported by ads served through Google AdMob,
     which may use Unity Ads as a mediated ad source. These providers may
-    use your device's advertising identifier to select ads and to measure
-    whether an ad led to an install.</p>
-    <p>Because Boxlings is suitable for all ages and we cannot tell how old
-    a player is, every ad request is sent with child-directed treatment and
-    is limited to general-audience content. The app shows no app-open ads,
-    and no ad interrupts the opening of a box.</p>
-    <p>On iOS you are asked for permission before any tracking happens. If
-    you decline, you still see ads — they are simply not matched to your
-    interests. You can change this later in your device settings.</p>
-    <p>Google's own privacy policy covers what they collect:
-    <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+    process technical device and network information, ad interactions and,
+    where permitted, advertising identifiers to deliver and measure ads.</p>
+    <p>For an unanswered age question or an age under 13, ad requests use
+    child-directed treatment and a general-audience (G) content limit.
+    App-open ads are disabled, Unity advertising consent is denied, and the
+    app does not request iOS tracking permission for these players.</p>
+    <p>For players aged 13 and over, ad requests use non-child-directed
+    treatment with a teen (T) content limit. Google's consent flow handles
+    applicable regional advertising choices and may present an iOS tracking
+    permission prompt. We pass the resulting advertising consent choices to
+    Unity. The iOS advertising identifier is accessible only when tracking
+    permission is granted; the Android build does not request the AD_ID
+    permission. Declining tracking does not by itself remove all advertising.</p>
+    <p>Banner ads may appear on game screens. Full-screen ads are placed
+    between activities, and rewarded ads are optional offers. For eligible
+    players aged 13 and over, app-open ads may appear from the third launch,
+    subject to consent, ad availability and frequency limits. No full-screen
+    ad is scheduled inside the box-opening animation.</p>
+    <p>Provider information:
+    <a href="https://policies.google.com/privacy">Google privacy policy</a>
+    and <a href="https://unity.com/legal/privacy-policy">Unity privacy policies</a>.</p>
 
     <h2>4. No Purchases</h2>
     <p>Boxlings contains no in-app purchases and no subscriptions. Shards
@@ -74,44 +97,61 @@
 
     <h2>5. Crash Reporting and Analytics</h2>
     <p>We use Firebase Crashlytics and Sentry to find out when the app
-    crashes. Crash reports are tied to an anonymous identifier, never to
-    you personally; Sentry runs with personal data and screenshot
-    attachment switched off.</p>
-    <p>We use Mixpanel to understand how the game is used in aggregate —
-    for example how many boxes have been opened and how many characters
-    have been found. This is deliberately limited to counts and coarse
-    state such as your platform and language. It is not linked to your
-    identity, it is not used to track you across other apps or websites,
-    and it never includes anything you type.</p>
+    crashes and investigate technical errors. Reports may include app and
+    operating-system versions, device details, error traces and technical
+    installation identifiers. These are diagnostic records, not a promise
+    that no data is collected. Sentry's default personal-data collection,
+    screenshot attachments and performance tracing are disabled.</p>
+    <p>We use Mixpanel to understand how the game is used. Our custom
+    home-opened event includes app version, platform, language, boxes opened
+    and distinct toys found. The Mixpanel SDK also automatically records
+    first app opens, app updates and session activity, including session
+    duration, and uses technical SDK identifiers. Our custom event properties
+    do not include your age, nickname, email address or other text you type.
+    This analytics data leaves your device.</p>
     <p>Firebase Analytics is disabled in Boxlings.</p>
+    <p>More information:
+    <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>,
+    <a href="https://sentry.io/privacy/">Sentry privacy policy</a> and
+    <a href="https://mixpanel.com/legal/privacy-policy/">Mixpanel privacy policy</a>.</p>
 
     <h2>6. Offline Use</h2>
-    <p>The game plays fully offline. A connection is only needed for ads,
-    the leaderboard and crash reporting.</p>
+    <p>Box opening, Toy Match and locally saved collections can work offline.
+    This does not mean that every feature works without a connection: ads,
+    online rankings, visits to other players' collections, analytics and
+    crash-report delivery use the internet. After a run of boxes, a progress
+    break offers either a 30-minute wait or an available rewarded ad; offline
+    play cannot use the ad shortcut.</p>
 
     <h2>7. Children's Privacy</h2>
     <p>Boxlings is suitable for all ages and is treated as a mixed-audience
-    app that may be used by children. Because we cannot tell a player's age,
-    we apply the stricter setting to everyone: every ad request carries
-    child-directed treatment, ad content is limited to a general-audience
-    rating, and personalised advertising is not requested.</p>
-    <p>We never ask for a name, email address, phone number or date of
-    birth, and the game can be played in full without ever appearing on a
-    leaderboard. If you believe a child has provided us information,
-    contact us and we will remove it.</p>
+    app that may be used by children. The locally stored age answer controls
+    the advertising treatment described above; an under-13 or unknown age
+    never enables tracking prompts or app-open ads.</p>
+    <p>The game does not ask for a real name, email address, phone number or
+    full date of birth during gameplay. The public leaderboard and technical
+    diagnostics described in this policy still matter for children's
+    privacy. Parents or guardians may contact us about a child's information
+    or request its deletion using the route below.</p>
 
     <h2>8. Deleting Your Data</h2>
-    <p>Everything stored on your device goes away when you delete the app.</p>
-    <p>If you have used the leaderboard, you can delete what is stored
-    online from inside the game: <strong>Settings &rarr; Delete online
-    account</strong>. That removes your anonymous account, your leaderboard
-    entries and your public collection. Your offline toys and progress stay
-    on this device. The deletion is permanent and cannot be undone, and
-    because sign-in is anonymous there is no way for us to restore it
-    afterwards.</p>
-    <p>If the app cannot reach our servers midway through, the deletion
-    resumes and finishes the next time it can. You do not need to ask us,
-    and you do not need an account with anyone to do it.</p>
+    <p>Removing local app data is separate from deleting online information.
+    Uninstalling does not automatically delete a Firebase account,
+    leaderboard entry or published collection.</p>
+    <p>The current release does not offer an in-app account-deletion button.
+    To request deletion of your online account, leaderboard entries or
+    public collection, email
+    <a href="mailto:choicy.appstore@gmail.com?subject=Boxlings%20data%20deletion%20request">choicy.appstore@gmail.com</a>
+    with the subject <strong>Boxlings data deletion request</strong>.
+    Tell us the player nickname and country shown in the app and whether
+    you are requesting deletion for yourself or as a parent or guardian.
+    We may ask for limited additional information to locate and verify the
+    correct anonymous account before deleting data. Do not send passwords,
+    payment details or identity documents in your initial request.</p>
+    <p>If you contact us, we receive your email address and the information
+    in your message to handle your request. Contact us before uninstalling
+    if you need help identifying the online records associated with your
+    device.</p>
 
     <h2>9. Changes to This Policy</h2>
     <p>If this policy changes we will update this page and the date above.</p>
