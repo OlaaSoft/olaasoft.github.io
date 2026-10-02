@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Waxlings — Privacy Policy</title><style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #fafafa;
+      padding: 20px;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+    .subtitle { color: #666; font-size: 14px; margin-bottom: 32px; }
+    h2 { font-size: 20px; font-weight: 700; margin-top: 32px; margin-bottom: 12px; color: #1a1a2e; }
+    p, li { font-size: 15px; color: #444; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 16px; }
+    li { margin-bottom: 6px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-size: 13px; color: #999; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0b0f1a; color: #e2e8f0; }
+      h1, h2 { color: #f1f5f9; }
+      p, li { color: #94a3b8; }
+      .subtitle { color: #64748b; }
+      .footer { border-color: #253049; color: #64748b; }
+    }
+  </style></head><body><main class="container"><h1>Waxlings — Privacy Policy</h1><div class="subtitle">Olaasoft MMC · Effective 2 October 2026</div><h2>1. About Waxlings</h2>
+<p>Waxlings is a free, advertising-supported mobile game published by Olaasoft MMC. Players open digital surprise boxes, crack a wax shell, play with a character and build a collection.</p>
+<p>Core play does not require a username, password, email address or online account. Waxlings currently keeps account, leaderboard and public-collection features disabled.</p>
+<h2>2. Data stored on the device</h2>
+<p>The app stores collection progress, shards and rewards, room/quest/achievement state, settings and similar gameplay records locally on the device.</p>
+<p>For an ad-supported build, the app asks the player&#x27;s age before advertising is configured. The confirmed answer is stored only in the app&#x27;s local settings and cannot be edited in the current flow. Waxlings does not send the answer or a birth date to its servers, analytics service or ad partners. Ad partners receive only the resulting child-directed or non-child-directed treatment signals. Until a valid answer is confirmed, child-directed treatment applies.</p>
+<p>Removing the app and its local data normally removes local progress and the local age answer, unless the operating system restores them from a device backup.</p>
+<h2>3. Firebase Core and Remote Config</h2>
+<p>Waxlings uses its own Firebase project to initialize Firebase Core and retrieve a blank-by-default force-update configuration after the app has rendered. A failed or unavailable fetch does not block offline play.</p>
+<p>These requests may expose ordinary technical network information such as IP address, app/device metadata and request timing to Google. Firebase Analytics, Firebase Crashlytics and Firebase Cloud Messaging collection remain disabled. Firebase Authentication, Firestore account publication and Cloud Functions account deletion are not used by the current app experience.</p>
+<p>Firebase information: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<h2>4. Advertising</h2>
+<p>Waxlings is a mixed-audience game. Advertising uses the safeguards below when enabled.</p>
+<p>When advertising is enabled, Google AdMob may process technical device and network information, ad interactions and, where permitted, advertising identifiers to deliver and measure ads. No additional mediated ad provider is enabled for Waxlings at this time.</p>
+<ul>
+<li>For an unanswered age declaration or an age under 13, requests use child-directed treatment and a general-audience (G) content limit. No UMP form, iOS tracking prompt or app-open ad is shown on that path.</li>
+<li>For age 13 and over, requests use non-child-directed treatment with a teen (T) content limit. Google&#x27;s User Messaging Platform handles applicable regional privacy choices and may present Apple&#x27;s tracking permission prompt on iOS.</li>
+<li>Android removes the <code>AD_ID</code> and Privacy Sandbox advertising permissions. The iOS advertising identifier is available only when Apple permits it.</li>
+<li>Banner ads may appear on game screens. Full-screen ads are placed between activities, never inside the box-opening or wax interaction. Rewarded ads are optional offers. Eligible 13+ players may receive app-open ads only under the configured launch and frequency rules.</li>
+<li>Declining tracking does not necessarily remove all advertising; it limits personalization/measurement according to platform and consent choices.</li>
+</ul>
+<p>Google privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>5. Diagnostics</h2>
+<p>Waxlings uses Sentry to diagnose crashes and technical errors. Reports may include app and operating-system versions, device characteristics, error traces and technical installation/request identifiers.</p>
+<p>The integration disables default personal-data collection, screenshot attachments and performance tracing. Firebase Crashlytics stays disabled to avoid a second diagnostics collector. Diagnostic delivery can depend on service availability and configured limits.</p>
+<p>Sentry privacy policy: <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></p>
+<h2>6. Product analytics</h2>
+<p>Waxlings uses Mixpanel for first-party product measurement. It uses the EU endpoint, disables automatic events and IP collection, and sends only an allowlisted custom event:</p>
+<ul>
+<li><code>home_opened</code>, with app version, platform, language, number of boxes opened and number of distinct characters found.</li>
+</ul>
+<p>The event does not include the locally declared age, nickname, email address, advertising identifier or text entered by the player. Mixpanel may use an app-scoped technical SDK identifier to process the event. Firebase Analytics remains disabled.</p>
+<p>Mixpanel privacy policy: <a href="https://mixpanel.com/legal/privacy-policy/">https://mixpanel.com/legal/privacy-policy/</a></p>
+<h2>7. No online account or public profile</h2>
+<p>Waxlings does not currently create a player account, publish a leaderboard entry or upload a public collection. The Firebase Auth provider and Firestore rules may be prepared at the project level, but the runtime feature flags keep those flows off.</p>
+<p>Because no Waxlings account is created, this policy does not claim that an account-deletion service is operational. If online accounts or public profiles are added later, the app and policy must first provide and verify complete in-app deletion of authentication, profile, rankings and shared collection data.</p>
+<h2>8. No purchases</h2>
+<p>Waxlings contains no in-app purchases or subscriptions. Shards and digital characters are earned through gameplay, have no cash value and cannot be exchanged for money. Olaasoft MMC does not receive payment information through Waxlings.</p>
+<h2>9. Offline use and notifications</h2>
+<p>Core box opening, wax play and locally saved collections work offline. Firebase configuration fetches, diagnostics, analytics and advertising use a network connection when their corresponding feature is active.</p>
+<p>The app supports local notifications. Remote push messaging and FCM automatic initialization remain disabled. Operating-system settings control notification permission.</p>
+<h2>10. Children&#x27;s privacy</h2>
+<p>Waxlings is suitable for all ages and is treated as a mixed-audience app that may be used by children. The install-local age answer controls only the advertising treatment described above; unknown and under-13 users retain the conservative child-directed path.</p>
+<p>The game does not ask for a real name, email address, phone number or full date of birth during gameplay. Product analytics excludes the age answer and typed text. Diagnostics and advertising still require the safeguards and disclosures in this policy.</p>
+<p>Parents or guardians may contact Olaasoft MMC about a child&#x27;s information at the address below.</p>
+<h2>11. Retention, deletion and choices</h2>
+<ul>
+<li>Local progress remains until the app&#x27;s data is cleared or the app is removed, subject to operating-system backups.</li>
+<li>There is no active Waxlings online account or public profile to delete.</li>
+<li>Advertising privacy choices are managed through the in-app Ad privacy entry and applicable operating-system settings once advertising is enabled.</li>
+<li>Sentry and Mixpanel records are processed under the provider configurations and policies described above. Requests or questions can be sent to the contact below.</li>
+</ul>
+<h2>12. Security and international processing</h2>
+<p>Olaasoft MMC uses reasonable safeguards and limits the configured data fields to those described here. Service providers may process technical data outside the player&#x27;s country. Mixpanel is configured for the EU endpoint; that does not by itself prevent every cross-border subprocess required by its service.</p>
+<h2>13. Changes and contact</h2>
+<p>If this policy changes, the published page and its effective date will be updated. Material runtime changes must be reflected in the app&#x27;s store declarations and policy before release.</p>
+<p>Questions or privacy requests: <code>choicy.appstore@gmail.com</code></p>
+<p>Copyright 2026 Olaasoft MMC. All rights reserved.</p><div class="footer"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="mailto:choicy.appstore@gmail.com">Contact OlaaSoft</a></div></main></body></html>
