@@ -25,19 +25,19 @@
       .subtitle { color: #64748b; }
       .footer { border-color: #253049; color: #64748b; }
     }
-  </style></head><body><main class="container"><h1>Waxlings — Privacy Policy</h1><div class="subtitle">Olaasoft MMC · Effective 2 October 2026</div><h2>1. About Waxlings</h2>
-<p>Waxlings is a free, advertising-supported mobile game published by Olaasoft MMC. Players open digital surprise boxes, crack a wax shell, play with a character and build a collection.</p>
-<p>Core play does not require a username, password, email address or online account. Waxlings currently keeps account, leaderboard and public-collection features disabled.</p>
+  </style></head><body><main class="container"><h1>Waxlings — Privacy Policy</h1><div class="subtitle">Olaasoft MMC · Effective 3 October 2026</div><h2>1. About Waxlings</h2>
+<p>Waxlings is a free, advertising-supported mobile game published by Olaasoft MMC. Players crack colorful wax shells, reveal soft characters, squish them and build a collection.</p>
+<p>Core play does not require a username, password, email address or online account. Optional rankings and public collections use an anonymous game account when the player opens those features.</p>
 <h2>2. Data stored on the device</h2>
 <p>The app stores collection progress, shards and rewards, room/quest/achievement state, settings and similar gameplay records locally on the device.</p>
 <p>For an ad-supported build, the app asks the player&#x27;s age before advertising is configured. The confirmed answer is stored only in the app&#x27;s local settings and cannot be edited in the current flow. Waxlings does not send the answer or a birth date to its servers, analytics service or ad partners. Ad partners receive only the resulting child-directed or non-child-directed treatment signals. Until a valid answer is confirmed, child-directed treatment applies.</p>
 <p>Removing the app and its local data normally removes local progress and the local age answer, unless the operating system restores them from a device backup.</p>
 <h2>3. Firebase Core and Remote Config</h2>
 <p>Waxlings uses its own Firebase project to initialize Firebase Core and retrieve a blank-by-default force-update configuration after the app has rendered. A failed or unavailable fetch does not block offline play.</p>
-<p>These requests may expose ordinary technical network information such as IP address, app/device metadata and request timing to Google. Firebase Analytics, Firebase Crashlytics and Firebase Cloud Messaging collection remain disabled. Firebase Authentication, Firestore account publication and Cloud Functions account deletion are not used by the current app experience.</p>
+<p>These requests may expose ordinary technical network information such as IP address, app/device metadata and request timing to Google. Firebase Analytics, Firebase Crashlytics and Firebase Cloud Messaging collection remain disabled. Optional online features use Firebase Authentication, Firestore and Cloud Functions as described below.</p>
 <p>Firebase information: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
 <h2>4. Advertising</h2>
-<p>Waxlings is a mixed-audience game. Advertising uses the safeguards below when enabled.</p>
+<p>Waxlings uses mixed-audience advertising with the age and consent safeguards below.</p>
 <p>When advertising is enabled, Google AdMob may process technical device and network information, ad interactions and, where permitted, advertising identifiers to deliver and measure ads. No additional mediated ad provider is enabled for Waxlings at this time.</p>
 <ul>
 <li>For an unanswered age declaration or an age under 13, requests use child-directed treatment and a general-audience (G) content limit. No UMP form, iOS tracking prompt or app-open ad is shown on that path.</li>
@@ -49,7 +49,7 @@
 <p>Google privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
 <h2>5. Diagnostics</h2>
 <p>Waxlings uses Sentry to diagnose crashes and technical errors. Reports may include app and operating-system versions, device characteristics, error traces and technical installation/request identifiers.</p>
-<p>The integration disables default personal-data collection, screenshot attachments and performance tracing. Firebase Crashlytics stays disabled to avoid a second diagnostics collector. Diagnostic delivery can depend on service availability and configured limits.</p>
+<p>The integration disables default personal-data collection, screenshot attachments and performance tracing. Firebase Crashlytics stays disabled to avoid a second diagnostics collector. Diagnostic delivery depends on service availability and configured limits.</p>
 <p>Sentry privacy policy: <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></p>
 <h2>6. Product analytics</h2>
 <p>Waxlings uses Mixpanel for first-party product measurement. It uses the EU endpoint, disables automatic events and IP collection, and sends only an allowlisted custom event:</p>
@@ -58,13 +58,15 @@
 </ul>
 <p>The event does not include the locally declared age, nickname, email address, advertising identifier or text entered by the player. Mixpanel may use an app-scoped technical SDK identifier to process the event. Firebase Analytics remains disabled.</p>
 <p>Mixpanel privacy policy: <a href="https://mixpanel.com/legal/privacy-policy/">https://mixpanel.com/legal/privacy-policy/</a></p>
-<h2>7. No online account or public profile</h2>
-<p>Waxlings does not currently create a player account, publish a leaderboard entry or upload a public collection. The Firebase Auth provider and Firestore rules may be prepared at the project level, but the runtime feature flags keep those flows off.</p>
-<p>Because no Waxlings account is created, this policy does not claim that an account-deletion service is operational. If online accounts or public profiles are added later, the app and policy must first provide and verify complete in-app deletion of authentication, profile, rankings and shared collection data.</p>
+<h2>7. Optional online account and public profile</h2>
+<p>Opening an online ranking or public collection feature creates an anonymous Firebase game identity; it does not require an email address or password. A chosen nickname, avatar and country, gameplay ranking values and shared collection may be stored with that identity and visible to other players. Do not use a real name or private information in a nickname.</p>
+<p>Local progress is separate from the public profile. The game does not promise cloud backup or cross-device recovery. Core play remains available without network access.</p>
+<p>Use Settings → Delete online account to remove the anonymous authentication identity, public profile, all daily/weekly rankings and shared collection. The app requires an explicit confirmation. A short-lived deletion marker prevents late offline writes from restoring deleted public data. A hashed recovery receipt lets the app check deletion completion without exposing the profile; completed receipts contain no account identifier. These temporary records expire automatically, normally within seven days plus the provider&#x27;s cleanup delay.</p>
+<p>If the app is unavailable, contact choicy.appstore@gmail.com with a deletion request for Waxlings. Include only the public nickname or game identifier needed to locate the record; do not send passwords. We may need information to verify that the request concerns your own account. See <a href="https://olaasoft.github.io/waxlings/delete-account.html">https://olaasoft.github.io/waxlings/delete-account.html</a> for instructions.</p>
 <h2>8. No purchases</h2>
 <p>Waxlings contains no in-app purchases or subscriptions. Shards and digital characters are earned through gameplay, have no cash value and cannot be exchanged for money. Olaasoft MMC does not receive payment information through Waxlings.</p>
 <h2>9. Offline use and notifications</h2>
-<p>Core box opening, wax play and locally saved collections work offline. Firebase configuration fetches, diagnostics, analytics and advertising use a network connection when their corresponding feature is active.</p>
+<p>Core wax cracking, squish play and locally saved collections work offline. Firebase configuration fetches, diagnostics, analytics and advertising use a network connection when their corresponding feature is active.</p>
 <p>The app supports local notifications. Remote push messaging and FCM automatic initialization remain disabled. Operating-system settings control notification permission.</p>
 <h2>10. Children&#x27;s privacy</h2>
 <p>Waxlings is suitable for all ages and is treated as a mixed-audience app that may be used by children. The install-local age answer controls only the advertising treatment described above; unknown and under-13 users retain the conservative child-directed path.</p>
@@ -73,8 +75,8 @@
 <h2>11. Retention, deletion and choices</h2>
 <ul>
 <li>Local progress remains until the app&#x27;s data is cleared or the app is removed, subject to operating-system backups.</li>
-<li>There is no active Waxlings online account or public profile to delete.</li>
-<li>Advertising privacy choices are managed through the in-app Ad privacy entry and applicable operating-system settings once advertising is enabled.</li>
+<li>Optional online account data can be deleted through the in-app Game account screen or the contact process above.</li>
+<li>Advertising privacy choices are managed through the in-app Ad privacy entry and applicable operating-system settings when available.</li>
 <li>Sentry and Mixpanel records are processed under the provider configurations and policies described above. Requests or questions can be sent to the contact below.</li>
 </ul>
 <h2>12. Security and international processing</h2>
